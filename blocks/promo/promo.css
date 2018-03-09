@@ -1,0 +1,18 @@
+.promo {
+  background-image: url("../img/promo_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  color: #000;
+  height: 645px; }
+  .promo__title {
+    font-family: Futura;
+    font-size: 50px;
+    width: 500px;
+    padding: 100px 0 0 55px;
+    margin: 0; }
+  .promo__text {
+    font-size: 38px;
+    display: block;
+    width: 370px;
+    margin-top: 50px; }

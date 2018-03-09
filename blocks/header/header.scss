@@ -1,0 +1,55 @@
+.header {
+
+  padding: 35px 0;
+  font-family: Futura;
+
+}
+
+.logo {
+
+  float: left;
+  width: 160px;
+
+  &__img {
+    display: block;
+    width:  100%;
+  }
+}
+
+.main-nav {
+
+  float: left;
+  width: 620px;
+  margin-top: 18px;
+  text-align: center;
+
+  &__item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  &__link {
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+
+.contacts {
+  float: right;
+  width: 380px;
+
+  &__link {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.contacts:after {
+  content: '';
+  clear: both;
+  display: block;
+}

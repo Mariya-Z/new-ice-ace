@@ -1,7 +1,9 @@
 @import 'var.scss';
 
-
 @import '../blocks/promo/promo.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/services/services.scss';
+
 @font-face {
   font-family: "Futura";
   src: url("../fonts/FUTURABOLD.TTF") format("truetype");
@@ -9,6 +11,9 @@
   font-weight: 600;
 }
 
+body {
+  margin: 0;
+}
 // /*ICON*/
 // .icon {
 //   background: url(http://www.picshare.ru/uploads/180309/IBy1A12TVO.png
@@ -16,7 +21,7 @@
 //   /*width: 35px;
 //   height: 25px;*/
 //   margin-right: 5px;
-//   display: inline-block;
+//   display: inline-belock;
 //   vertical-align: middle;
 // }
 
@@ -24,4 +29,13 @@
 .container {
   width: 1160px;
   margin: 0 auto;
+}
+
+.highlighter {
+  color: #74e196;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }

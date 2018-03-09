@@ -1,0 +1,60 @@
+.service {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  &__title {
+    font-family: Futura;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  &__description {
+    font-family: Futura;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+
+
+
+/*.service--horizontal {
+  display: flex;
+  flex-direction: row;
+}*/
+
+/*.service__photo {
+  width: 360px;
+  height: 245px;
+}*/
+
+.service__description
+{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+}
+
+.service__links {
+  display: block;
+}
+
+.service__link {
+  font-family: Futura;
+  font-size: 20px;
+}
+
+.service__link:after {
+  content: '';
+  float: right;
+  background-position: -10px -261px;
+  width: 35px;
+  height: 25px;
+}
