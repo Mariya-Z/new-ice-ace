@@ -1,7 +1,4 @@
-.service {
-  width: 360px;
-  display: flex;
-  flex-direction: column;
+.services {
 
   &__content {
     display: flex;
@@ -20,6 +17,36 @@
     font-family: Futura;
     font-size: 20px;
     text-align: center;
+  }
+}
+
+.service {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+
+
+  &__title {
+    font-family: Futura;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  &__description
+  {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+  }
+
+  &__links {
+    display: block;
+  }
+
+  &__link:after {
+    content: '';
+    width: 37px;
+    height: 27px;
+    background-position: -10px -261px;
   }
 }
 

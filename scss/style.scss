@@ -14,21 +14,39 @@
 body {
   margin: 0;
 }
-// /*ICON*/
-// .icon {
-//   background: url(http://www.picshare.ru/uploads/180309/IBy1A12TVO.png
-//   ) no-repeat 0 0;
-//   /*width: 35px;
-//   height: 25px;*/
-//   margin-right: 5px;
-//   display: inline-belock;
-//   vertical-align: middle;
-// }
+
+/*ICON*/
+.icon {
+  background: url(http://www.picshare.ru/uploads/180309/IBy1A12TVO.png
+  ) no-repeat 0 0;
+  /*width: 35px;
+  height: 25px;*/
+  // margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /*CONTAINER*/
-.container {
-  width: 1160px;
-  margin: 0 auto;
+
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
 }
 
 .highlighter {

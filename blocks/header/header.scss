@@ -1,18 +1,23 @@
 .header {
-
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
   padding: 35px 0;
   font-family: Futura;
-
 }
 
 .logo {
 
-  float: left;
+  // float: left;
   width: 160px;
+  margin: 0;
 
   &__img {
     display: block;
-    width:  100%;
+    width: 160px;
+    height: 55px;
+    background-position: -10px -100px;
+
   }
 }
 
