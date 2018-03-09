@@ -1,0 +1,18 @@
+.promo {
+  background-image: url("../img/promo_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  color: #fff;
+  height: 645px; }
+
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/FUTURABOLD.TTF") format("truetype");
+  font-style: bold;
+  font-weight: 600; }
+
+/*CONTAINER*/
+.container {
+  width: 1160px;
+  margin: 0 auto; }

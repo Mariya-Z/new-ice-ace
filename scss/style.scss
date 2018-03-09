@@ -1,0 +1,27 @@
+@import 'var.scss';
+
+
+@import '../blocks/promo/promo.scss';
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/FUTURABOLD.TTF") format("truetype");
+  font-style: bold;
+  font-weight: 600;
+}
+
+// /*ICON*/
+// .icon {
+//   background: url(http://www.picshare.ru/uploads/180309/IBy1A12TVO.png
+//   ) no-repeat 0 0;
+//   /*width: 35px;
+//   height: 25px;*/
+//   margin-right: 5px;
+//   display: inline-block;
+//   vertical-align: middle;
+// }
+
+/*CONTAINER*/
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
