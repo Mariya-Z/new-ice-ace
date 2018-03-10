@@ -41,26 +41,6 @@ ul {
   padding: 0;
   margin: 0; }
 
-@screen-sm 320px;
-@screen-md 768px;
-@screen-lg 1170px;
-.promo__title {
-  font-family: Futura;
-  font-size: 50px;
-  width: 500px;
-  padding: 100px 0 0 55px;
-  margin: 0; }
-
-.promo__text {
-  font-size: 38px;
-  display: block;
-  width: 370px;
-  margin-top: 50px; }
-
-@media (min-width: 320px) {
-  .promo {
-    background: #000; } }
-
 @media (min-width: 768px) {
   .promo {
     background-image: url("../img/promo_bg.jpg");
@@ -68,7 +48,18 @@ ul {
     background-size: cover;
     margin: 0;
     color: #fff;
-    height: 645px; } }
+    height: 645px; }
+    .promo__title {
+      font-family: Futura;
+      font-size: 50px;
+      width: 500px;
+      padding: 100px 0 0 55px;
+      margin: 0; }
+    .promo__text {
+      font-size: 38px;
+      display: block;
+      width: 370px;
+      margin-top: 50px; } }
 
 .header {
   padding: 35px 0;
@@ -114,10 +105,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -159,6 +150,9 @@ ul {
     background-position: -10px -261px;
     float: right; }
   .service--horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;

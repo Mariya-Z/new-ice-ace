@@ -1,8 +1,21 @@
-@import '../../scss/var.scss';
+// @import '../../scss/var.scss';
 
-.promo {
+//@media (min-width: 320px) {
+  //.promo {
+    //display: none;
+  //}
+//}
 
-  // display: block;
+@media (min-width:768px) {
+
+  .promo {
+    //display: block;
+    background-image: url('../img/promo_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    color: #fff;
+    height: 645px;
 
     &__title {
       font-family: Futura;
@@ -18,17 +31,5 @@
       width: 370px;
       margin-top: 50px;
     }
-
-  @media (min-width: 320px) {
-    background: #000;
-  }
-
-  @media (min-width:768px) {
-    background-image: url('../img/promo_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    color: #fff;
-    height: 645px;
   }
 }
