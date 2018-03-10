@@ -1,60 +1,141 @@
-.services {
+@media (min-width: 320px) {
+  .services
+  {
 
-  &__content {
+    &__content
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    &__title
+    {
+      font-family: Futura;
+      font-size: 24px;
+      text-align: center;
+      // font-weight: bold;
+    }
+
+    &__description
+    {
+      font-family: Futura;
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+
+  .service
+  {
+    width: 360px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-  }
 
-  &__title {
-    font-family: Futura;
-    font-size: 40px;
-    text-align: center;
-  }
 
-  &__description {
-    font-family: Futura;
-    font-size: 20px;
-    text-align: center;
+    &__title
+    {
+      font-family: Futura;
+      font-size: 20px;
+      text-align: left;
+      background: url('../img/item1.jpg')  no-repeat 0 0;
+      color: #fff;
+    }
+
+    &__description
+    {
+      display: none;
+    }
+
+    &__links
+    {
+      display: block;
+    }
+
+    &__link
+    {
+      display: none;
+    }
+
+    &__img
+    {
+      width: 37px;
+      height: 27px;
+      background-position: -114px -261px;
+      float: right;
+    }
+
+    &__photo
+    {
+      display: none;
+    }
+
+    &--horizontal
+    {
+      display: flex;
+      flex-direction: row;
+    }
+
   }
 }
 
-.service {
-  width: 360px;
-  display: flex;
-  flex-direction: column;
+// .services {
+
+//   &__content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: stretch;
+//   }
+
+//   &__title {
+//     font-family: Futura;
+//     font-size: 40px;
+//     text-align: center;
+//   }
+
+//   &__description {
+//     font-family: Futura;
+//     font-size: 20px;
+//     text-align: center;
+//   }
+// }
+
+// .service {
+//   width: 360px;
+//   display: flex;
+//   flex-direction: column;
 
 
-  &__title {
-    font-family: Futura;
-    font-size: 20px;
-    text-align: left;
-  }
+//   &__title {
+//     font-family: Futura;
+//     font-size: 20px;
+//     text-align: left;
+//   }
 
-  &__description
-  {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
-  }
+//   &__description
+//   {
+//     font-family: 'PT Sans', sans-serif;
+//     font-size: 15px;
+//   }
 
-  &__links {
-    display: block;
-  }
+//   &__links {
+//     display: block;
+//   }
 
-  &__img {
-    width: 37px;
-    height: 27px;
-    background-position: -10px -261px;
-    float: right;
-  }
+//   &__img {
+//     width: 37px;
+//     height: 27px;
+//     background-position: -114px -261px;
+//     float: right;
+//   }
 
-  &--horizontal {
-    display: flex;
-    flex-direction: row;
-  }
+//   &--horizontal {
+//     display: flex;
+//     flex-direction: row;
+//   }
 
-}
+// }
 
 
 

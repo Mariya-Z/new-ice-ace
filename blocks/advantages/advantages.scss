@@ -1,0 +1,82 @@
+@media (min-width: 320px)
+{
+  .advantage
+  {
+    width: 100%;
+  }
+
+  .advantages
+  {
+    display: flex;
+    flex-direction: column;
+    font-family: Futura;
+
+    // &__info
+    // {
+    //   display: flex;
+    //   flex-direction: row;
+    // }
+
+    &__info:before
+    {
+      content: '';
+      display: inline-block;
+      width: 55px;
+      height: 20px;
+      background-position: -10px -10px;
+    }
+
+    &__title
+    {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    &__cathphrase
+    {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    &__descr
+    {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 12px;
+    }
+
+    &__content
+    {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+}
+
+// .advantages {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .advantages__title {
+//   font-family: Futura;
+//   font-size: 40px;
+// }
+
+// .advantages__cathphrase
+// {
+//   font-family: Futura;
+//   font-size: 20px;
+// }
+
+// .advantages__descr
+// {
+//   font-family: 'PT Sans', sans-serif;
+//   font-size: 15px;
+// }
+
+// .advantages__content {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+

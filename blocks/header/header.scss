@@ -1,4 +1,5 @@
-.header {
+.header
+{
   // display: flex;
   // flex-direction: row;
   // justify-content: space-between;
@@ -6,52 +7,142 @@
   font-family: Futura;
 }
 
-.logo {
+@media (min-width: 320px)
+{
 
-  // float: left;
-  width: 160px;
-  margin: 0;
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+  }
 
-  &__img {
-    display: block;
-    width: 160px;
-    height: 55px;
-    background-position: -10px -10px;
+  .main-nav
+  {
 
+    width: 320px;
+    margin-top: 18px;
+    text-align: center;
+
+    &__list
+    {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item
+    {
+      display: inline-block;
+      margin: 0 10px;
+      border-bottom: 1px solid #74e196;
+    }
+
+    &__link
+    {
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  .logo
+  {
+    width: 47px;
+    //height: 8px;
+    margin: 0;
+
+    &__header
+    {
+      display: block;
+      width: 47px;
+      height: 9px;
+      background-position: -161px -221px;
+    }
+  }
+
+  .contacts
+  {
+  width: 195px;
+  margin: auto;
+
+
+    &__phone
+    {
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+    }
+
+     &__email
+     {
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  .btn
+  {
+    color: #000;
+    border: 2px solid #74e196;
+  }
+
+  .social-networks
+  {
+    width: 192px;
+    margin-top: 20px;
   }
 }
 
-.main-nav {
+// .logo {
 
-  float: left;
-  width: 620px;
-  margin-top: 18px;
-  text-align: center;
+//   // float: left;
+//   width: 160px;
+//   margin: 0;
 
-  &__item {
-    display: inline-block;
-    margin: 0 10px;
-  }
+//   &__img {
+//     display: block;
+//     width: 160px;
+//     height: 55px;
+//     background-position: -1px -10px;
 
-  &__link {
-    font-size: 15px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-}
+//   }
+// }
+
+// .main-nav {
+
+//   float: left;
+//   width: 620px;
+//   margin-top: 18px;
+//   text-align: center;
+
+//   &__item {
+//     display: inline-block;
+//     margin: 0 10px;
+//   }
+
+//   &__link {
+//     font-size: 15px;
+//     font-weight: 900;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//   }
+// }
 
 
-.contacts {
-  float: right;
-  width: 380px;
+// .contacts {
+//   float: right;
+//   width: 380px;
 
-  &__link {
-    font-size: 22px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-}
+//   &__link {
+//     font-size: 22px;
+//     font-weight: 700;
+//     text-decoration: none;
+//   }
+// }
 
 .contacts:after {
   content: '';

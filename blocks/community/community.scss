@@ -1,0 +1,38 @@
+@media (min-width: 320px)
+{
+  .community {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+    &__title
+    {
+      font-family: Futura;
+      font-size: 24px;
+    }
+
+    &__descr
+    {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 12px;
+    }
+  }
+}
+
+// .community {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+
+// .community__title {
+//   font-family: Futura;
+//   font-size: 40px;
+// }
+
+// .community__descr {
+//   font-family: 'PT Sans', sans-serif;
+//   font-size: 15px;
+// }

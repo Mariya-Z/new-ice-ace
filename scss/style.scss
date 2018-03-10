@@ -1,21 +1,24 @@
 @import 'var.scss';
 
 
-@font-face {
+@font-face
+{
   font-family: "Futura";
   src: url("../fonts/FUTURABOLD.TTF") format("truetype");
   font-style: bold;
   font-weight: 600;
 }
 
-body {
+body
+{
   margin: 0;
 }
 
 /*ICON*/
-.icon {
-  background: url(http://www.picshare.ru/uploads/180309/IBy1A12TVO.png
-  ) no-repeat 0 0;
+.icon
+{
+  background: url(http://www.picshare.ru/uploads/180310/PfLBNUKZ6m.png
+    ) no-repeat 0 0;
   /*width: 35px;
   height: 25px;*/
   // margin-right: 5px;
@@ -23,34 +26,91 @@ body {
   vertical-align: middle;
 }
 
+.social-networks
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.youTube
+{
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: -341px -10px;
+}
+
+.instagram
+{
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: -341px -62px;
+}
+
+.facebook
+{
+  display: block;
+  width: 18px;
+  height: 33px;
+  background-position: -341px -114px;
+}
+
+
+.vk
+{
+  display: block;
+  width: 40px;
+  height: 24px;
+  background-position: -67px -303px;
+}
+
+.btn
+{
+  display: inline-block;
+  float: left;
+  width: 135px;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #74e196;
+}
+
 /*CONTAINER*/
 
-@media (min-width: 320px) {
+@media (min-width: 320px)
+{
   .container {
     width: 320px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
+// @media (min-width: 768px) {
+//   .container {
+//     width: 768px;
+//     margin: 0 auto;
+//   }
+// }
 
-@media (min-width: 1170px) {
-  .container {
-    width: 1170px;
-    margin: 0 auto;
-  }
-}
+// @media (min-width: 1170px) {
+//   .container {
+//     width: 1170px;
+//     margin: 0 auto;
+//   }
+// }
 
-.highlighter {
+.highlighter
+{
   color: #74e196;
 }
 
-ul {
+ul
+{
   padding: 0;
   margin: 0;
 }
@@ -59,3 +119,9 @@ ul {
 @import '../blocks/promo/promo.scss';
 @import '../blocks/header/header.scss';
 @import '../blocks/services/services.scss';
+@import '../blocks/advantages/advantages.scss';
+@import '../blocks/sales/sales.scss';
+@import '../blocks/team/team.scss';
+@import '../blocks/community/community.scss';
+
+@import '../blocks/footer/footer.scss';
