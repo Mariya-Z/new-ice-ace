@@ -1,33 +1,74 @@
 @screen-sm 320px;
 @screen-md 768px;
 @screen-lg 1170px;
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/FUTURABOLD.TTF") format("truetype");
+  font-style: bold;
+  font-weight: 600; }
+
+body {
+  margin: 0; }
+
+/*ICON*/
+.icon {
+  background: url(http://www.picshare.ru/uploads/180309/IBy1A12TVO.png) no-repeat 0 0;
+  /*width: 35px;
+  height: 25px;*/
+  display: inline-block;
+  vertical-align: middle; }
+
+/*CONTAINER*/
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto; } }
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto; } }
+
+@media (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto; } }
+
+.highlighter {
+  color: #74e196; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
 @screen-sm 320px;
 @screen-md 768px;
 @screen-lg 1170px;
-.promo {
-  background-image: url("../img/promo_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  color: #fff;
-  height: 645px; }
-  .promo__title {
-    font-family: Futura;
-    font-size: 50px;
-    width: 500px;
-    padding: 100px 0 0 55px;
-    margin: 0; }
-  .promo__text {
-    font-size: 38px;
-    display: block;
-    width: 370px;
-    margin-top: 50px; }
-  @media (min-width: 320px) {
-    .promo {
-      display: none; } }
-  @media (min-width: 768px) {
-    .promo {
-      display: block; } }
+.promo__title {
+  font-family: Futura;
+  font-size: 50px;
+  width: 500px;
+  padding: 100px 0 0 55px;
+  margin: 0; }
+
+.promo__text {
+  font-size: 38px;
+  display: block;
+  width: 370px;
+  margin-top: 50px; }
+
+@media (min-width: 320px) {
+  .promo {
+    background: #000; } }
+
+@media (min-width: 768px) {
+  .promo {
+    background-image: url("../img/promo_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    color: #fff;
+    height: 645px; } }
 
 .header {
   padding: 35px 0;
@@ -40,7 +81,7 @@
     display: block;
     width: 160px;
     height: 55px;
-    background-position: -10px -100px; }
+    background-position: -10px -10px; }
 
 .main-nav {
   float: left;
@@ -106,7 +147,7 @@
   .service__title {
     font-family: Futura;
     font-size: 20px;
-    text-align: center; }
+    text-align: left; }
   .service__description {
     font-family: 'PT Sans', sans-serif;
     font-size: 15px; }
@@ -143,43 +184,3 @@
   background-position: -10px -261px;
   width: 35px;
   height: 25px; }
-
-@font-face {
-  font-family: "Futura";
-  src: url("../fonts/FUTURABOLD.TTF") format("truetype");
-  font-style: bold;
-  font-weight: 600; }
-
-body {
-  margin: 0; }
-
-/*ICON*/
-.icon {
-  background: url(http://www.picshare.ru/uploads/180309/IBy1A12TVO.png) no-repeat 0 0;
-  /*width: 35px;
-  height: 25px;*/
-  display: inline-block;
-  vertical-align: middle; }
-
-/*CONTAINER*/
-@media (min-width: 320px) {
-  .container {
-    width: 320px;
-    margin: 0 auto; } }
-
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-    margin: 0 auto; } }
-
-@media (min-width: 1170px) {
-  .container {
-    width: 1170px;
-    margin: 0 auto; } }
-
-.highlighter {
-  color: #74e196; }
-
-ul {
-  padding: 0;
-  margin: 0; }

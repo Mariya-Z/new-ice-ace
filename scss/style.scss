@@ -1,8 +1,5 @@
 @import 'var.scss';
 
-@import '../blocks/promo/promo.scss';
-@import '../blocks/header/header.scss';
-@import '../blocks/services/services.scss';
 
 @font-face {
   font-family: "Futura";
@@ -57,3 +54,8 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+
+@import '../blocks/promo/promo.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/services/services.scss';
