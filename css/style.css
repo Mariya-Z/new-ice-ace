@@ -136,14 +136,7 @@ ul {
   text-align: center; }
 
 .service {
-  width: 360px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  width: 360px; }
   .service__title {
     font-family: Futura;
     font-size: 20px;
@@ -153,11 +146,16 @@ ul {
     font-size: 15px; }
   .service__links {
     display: block; }
-  .service__link:after {
-    content: '';
+  .service__img {
     width: 37px;
     height: 27px;
-    background-position: -10px -261px; }
+    background-position: -10px -261px;
+    float: right; }
+  .service--horizontal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
 
 /*.service--horizontal {
   display: flex;

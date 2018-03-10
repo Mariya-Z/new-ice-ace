@@ -22,8 +22,8 @@
 
 .service {
   width: 360px;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
 
   &__title {
@@ -42,12 +42,17 @@
     display: block;
   }
 
-  &__link:after {
-    content: '';
+  &__img {
     width: 37px;
     height: 27px;
     background-position: -10px -261px;
+    float: right;
   }
+
+  &--horizontal {
+    flex-direction: row;
+  }
+
 }
 
 
