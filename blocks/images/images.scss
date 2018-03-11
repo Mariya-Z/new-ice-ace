@@ -1,0 +1,52 @@
+.images
+{
+    // display: flex;
+    // flex-direction: column;
+  &__title
+  {
+    // display: flex;
+    // flex-direction: row;
+    text-align: center;
+    font-family: Futura;
+    font-weight: bold;
+  }
+}
+
+
+@media (min-width: 320px)
+{
+  .images
+  {
+    // display: flex;
+    // flex-direction: column;
+
+
+    &__title
+    {
+      // display: flex;
+      // flex-direction: row;
+      // font-family: Futura;
+      font-size: 24px;
+      /*font-style: bold;*/
+    }
+
+    &__photo
+    {
+      display: none;
+    }
+  }
+}
+
+
+  // .images {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  // .images_title{
+  //   display: flex;
+  //   flex-direction: row;
+  //   font-family: Futura;
+  //   font-size: 40px;
+  //   /*font-style: bold;*/
+  // }
