@@ -351,6 +351,7 @@ ul {
       font-family: 'PT Sans', sans-serif;
       font-size: 12px; } }
 
+@omport '../blocks/map/map.scss';
 .images__title {
   text-align: center;
   font-family: Futura;
