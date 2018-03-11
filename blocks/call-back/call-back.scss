@@ -1,0 +1,26 @@
+@media (min-width: 320px)
+{
+  .call-back
+  {
+    &__title
+    {
+      font-family: Futura;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    &__point
+    {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  // .btn
+  // {
+  //   color: #000;
+  //   border: 2px solid #74e196;
+  // }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shedule</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+
+    <a href="#" class="btn btn--book">Записаться</a>
+
+  </header>
+
+  <main>
+
+    <section class="program">
+      <div class="container">
+        <h2 class="program__title">Выбрать программу</h2>
+
+        <fieldset class="program__form">
+          <lable class="program__lable">
+            <p class="program__point">Спорт</p>
+            <input type="text" placeholder="Выберите вид спорта" maxlength="50" size="50">
+          </lable>
+          <lable class="program__lable">
+            <p class="program__point">Инструктор</p>
+            <input type="text" placeholder="Выберите  инструктора" maxlength="50" size="50">
+          </lable>
+          <lable class="program__lable">
+            <p class="program__point">Дата</p>
+            <input type="text" placeholder="17.11.2017" maxlength="50" size="50">
+          </lable>
+          <lable class="program__lable">
+            <p class="program__point">Время</p>
+            <input type="text" placeholder="11:00" maxlength="50" size="50">
+          </lable>
+          <lable class="program__lable">
+            <p class="program__point">Стоимость</p>
+            <input type="text" placeholder="Выберите стоимость" maxlength="50" size="50">
+          </lable>
+        </fieldset>
+
+        <table class="program__table program--md">
+          <tr>
+            <th>Спорт</th>
+            <th>Инструктор</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Стоимость</th>
+            <th> </th>
+          </tr>
+          <tr>
+            <td>Сноуборд</td>
+            <td>Константин Константинопольский</td>
+            <td>30.03.2017</td>
+            <td>12:00</td>
+            <td>2000руб</td>
+            <td><a href="#">записаться</a></td>
+          </tr>
+          <tr>
+            <td>Сноуборд</td>
+            <td>Константин Константинопольский</td>
+            <td>01.04.2017</td>
+            <td>12:00</td>
+            <td>2000руб</td>
+            <td><a href="#">записаться</a></td>
+          </tr>
+          <tr>
+            <td>Лыжи</td>
+            <td>Степан Александров</td>
+            <td>01.04.2017</td>
+            <td>13:00</td>
+            <td>3000руб</td>
+            <td><a href="#">записаться</a></td>
+          </tr>
+          <tr>
+            <td>Лыжи</td>
+            <td>Виталий Сергеев</td>
+            <td>03.04.2017</td>
+            <td>14:00</td>
+            <td>4000руб</td>
+            <td><a href="#">записаться</a></td>
+          </tr>
+          <tr>
+            <td>Сноуборд</td>
+            <td>Арсений Петров</td>
+            <td>03.04.2017</td>
+            <td>14:00</td>
+            <td>4000руб</td>
+            <td><a href="#">записаться</a></td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
+
+    <section class="instructors">
+      <div class="container">
+        <fieldset class="instructors__form">
+
+          <div id="tabs_content_1" class="instructor">
+
+            <div id="tab1" class="instructor__item  instructor__item--active">
+              <img src="" alt="constantin" class="instructor__photo">
+              <p class="instructor__name">Константин Константинопольский</p>
+              <h3 class="instructor__type">Free ride / продвинутый уровень</h3>
+              <p class="instructor__date">Дата занятия - 30 марта 2017года.</p>
+              <h3 class="instructor__visit">Абонемент на разовое посещение</h3>
+              <p class="instructor__lesson">Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.</p>
+              <p class="cost">2000 р</p>
+              <a href="#" class="btn btn--big">Купить</a>
+              <a href="#">Узнать больше</a>
+            </div>
+            <div id="tab2" class="instructor__item">2</div>
+            <div id="tab3" class="instructor__item">3</div>
+            <div id="tab4" class="instructor__item">4</div>
+            <div id="tab5" class="instructor__item">5</div>
+          </div>
+        </fieldset>
+        <ul class="tabs" data-tabs-content-id="#tabs_content_1">
+          <li class="tabs__item  tabs__item--active"><a href="#tab1">1</a></li>
+          <li class="tabs__item"><a href="#tab2">2</a></li>
+          <li class="tabs__item"><a href="#tab3">3</a></li>
+          <li class="tabs__item"><a href="#tab4">4</a></li>
+          <li class="tabs__item"><a href="#tab5">5</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="call-back">
+      <div class="container">
+        <h2 class="call-back__title">Заказать обратный звонок</h2>
+
+        <fieldset class="call-back__form">
+          <lable class="call-back__lable">
+            <p class="call-back__point">*Имя</p>
+            <input type="text" placeholder="Введите ваше имя" maxlength="50" size="50">
+          </lable>
+          <lable class="call-back__lable">
+            <p class="call-back__point">*Фамилия</p>
+            <input type="text" placeholder="Введите  вашу фамилию" maxlength="50" size="50">
+          </lable>
+          <lable class="call-back__lable">
+            <p class="call-back__point">*Телефон</p>
+            <input type="text" placeholder="8(965) 075-53-12" maxlength="50" size="50">
+          </lable>
+          <lable class="call-back__lable">
+            <p class="call-back__point">Оставьте свой комментарий по желанию</p>
+            <textarea cols="43" rows="5" placeholder="11:00">
+          </textarea>
+        </fieldset>
+        <a href="#" class="btn">Отправить</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="blocks/instructors/instructors.js"></script>
+</body>
+</html>

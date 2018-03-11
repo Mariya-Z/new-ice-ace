@@ -1,0 +1,32 @@
+.tabs
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item
+  {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+
+    &--active a
+    {
+      color: #000 !important;
+    }
+  }
+}
+
+
+.instructor
+{
+  &__item
+  {
+    display: none;
+
+    &--active
+    {
+      display: block;
+    }
+  }
+}

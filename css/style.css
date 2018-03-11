@@ -80,6 +80,27 @@ ul {
   .promo {
     display: none; } }
 
+@media (min-width: 768px) {
+  .promo {
+    display: block;
+    background-image: url("../img/promo_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    color: #fff;
+    height: 420px; }
+    .promo__title {
+      font-family: Futura;
+      font-weight: 24px;
+      width: 220px;
+      padding: 125px 0 0 90px;
+      margin: 0; }
+    .promo__text {
+      font-size: 20px;
+      display: block;
+      width: 200px;
+      margin-top: 25px; } }
+
 .header {
   padding: 35px 0;
   font-family: Futura; }
@@ -363,6 +384,44 @@ ul {
     /*font-style: bold;*/ }
   .images__photo {
     display: none; } }
+
+@media (min-width: 320px) {
+  .program__title {
+    font-family: Futura;
+    font-size: 24px;
+    font-weight: bold; }
+  .program__point {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0; } }
+
+.tabs {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .tabs__item {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top; }
+    .tabs__item--active a {
+      color: #000 !important; }
+
+.instructor__item {
+  display: none; }
+  .instructor__item--active {
+    display: block; }
+
+@media (min-width: 320px) {
+  .call-back__title {
+    font-family: Futura;
+    font-size: 24px;
+    font-weight: bold; }
+  .call-back__point {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0; } }
 
 @media (min-width: 320px) {
   footer {
