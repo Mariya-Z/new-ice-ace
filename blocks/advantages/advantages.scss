@@ -1,57 +1,64 @@
-@media (min-width: 320px)
+.advantage
 {
-  .advantage
-  {
-    width: 100%;
-  }
-
-  .advantages
-  {
-    display: flex;
-    flex-direction: column;
-    font-family: Futura;
-
-    // &__info
-    // {
-    //   display: flex;
-    //   flex-direction: row;
-    // }
-
-    &__info:before
-    {
-      content: '';
-      display: inline-block;
-      width: 55px;
-      height: 20px;
-      background-position: -10px -10px;
-    }
-
-    &__title
-    {
-      font-size: 24px;
-      text-align: center;
-    }
-
-    &__cathphrase
-    {
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    &__descr
-    {
-      font-family: 'PT Sans', sans-serif;
-      font-size: 12px;
-    }
-
-    &__content
-    {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+.advantages
+{
+  // display: flex;
+  // flex-direction: column;
+  font-family: Futura;
+
+  // &__info
+  // {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+
+  &--loc
+  {
+    display: inline-block;
+    // width: 60px;
+    // height: 61px;
+    // background-position: -91px -85px;
+    margin-left: 25px;
+    margin-right: 20px;
+
+  }
+
+  &__info
+  {
+    width: 200px;
+  }
+
+  &__title
+  {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__cathphrase
+  {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__descr
+  {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+  }
+
+  &__content
+  {
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+}
+
 
 // .advantages {
 //   display: flex;

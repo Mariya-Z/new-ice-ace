@@ -1,153 +1,142 @@
 .header
 {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-between;
-  padding: 35px 0;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  padding:  0;
   font-family: Futura;
+  height: 480px;
 }
 
-@media (min-width: 320px)
+.main-nav
 {
+  width: 320px;
+  margin-top: 18px;
+  text-align: center;
 
-  .header {
+  &__list
+  {
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
   }
 
-  .main-nav
+  &__item
   {
-
-    width: 320px;
-    margin-top: 18px;
-    text-align: center;
-
-    &__list
-    {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__item
-    {
-      display: inline-block;
-      margin: 0 10px;
-      border-bottom: 1px solid #74e196;
-    }
-
-    &__link
-    {
-      font-size: 15px;
-      font-weight: 900;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #000;
-    }
+    display: inline-block;
+    // margin: 0;
+    border-bottom: 1px solid #74e196;
   }
 
-  .logo
+  &__topic
   {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 15px auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.logo
+{
+  // width: 47px;
+  //height: 8px;
+  // margin: 0;
+  // position: absolute;
+  top: 0;
+  padding-top: 22px;
+  padding-left: 22px;
+
+  &__header
+  {
+    display: block;
     width: 47px;
-    //height: 8px;
-    margin: 0;
-    //padding-top: 22px;
-    padding-left: 22px;
-
-    &__header
-    {
-      display: block;
-      width: 47px;
-      height: 9px;
-      background-position: -161px -221px;
-    }
+    height: 9px;
+    background-position: -161px -221px;
   }
+}
 
-  .contacts
-  {
+.contacts
+{
   width: 195px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 
-    &__phone
-    {
-      font-size: 22px;
-      font-weight: 700;
-      text-decoration: none;
-      color: #000;
-    }
-
-     &__email
-     {
-      font-size: 20px;
-      font-weight: 700;
-      text-decoration: none;
-      color: #000;
-    }
-  }
-
-  .btn
+  &__phone
   {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
     color: #000;
-    border: 2px solid #74e196;
+    display: flex;
+    justify-content: center;
   }
 
-  .social-networks
-  {
-    width: 192px;
-    margin-top: 20px;
+   &__email
+   {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
   }
 }
 
-// .logo {
-
-//   // float: left;
-//   width: 160px;
-//   margin: 0;
-
-//   &__img {
-//     display: block;
-//     width: 160px;
-//     height: 55px;
-//     background-position: -1px -10px;
-
-//   }
-// }
-
-// .main-nav {
-
-//   float: left;
-//   width: 620px;
-//   margin-top: 18px;
-//   text-align: center;
-
-//   &__item {
-//     display: inline-block;
-//     margin: 0 10px;
-//   }
-
-//   &__link {
-//     font-size: 15px;
-//     font-weight: 900;
-//     text-transform: uppercase;
-//     text-decoration: none;
-//   }
-// }
-
-
-// .contacts {
-//   float: right;
-//   width: 380px;
-
-//   &__link {
-//     font-size: 22px;
-//     font-weight: 700;
-//     text-decoration: none;
-//   }
-// }
-
-.contacts:after {
-  content: '';
-  clear: both;
-  display: block;
+.social-networks
+{
+  display: flex;
+  justify-content: space-between;
+  //width: 192px;
+  margin-top: 10px;
+  margin-top: 20px;
 }
+
+.btn-book
+{
+  position: absolute;
+  top: 0;
+  margin-top: 370px;
+  margin-left: 92px;
+}
+
+@media (min-width: 768px)
+{
+
+}
+
+@media (min-width: 1170px)
+{
+  .header {
+    display: flex;
+    height: 646px;
+  }
+
+  // .youtube_sm,
+  // .instagram_sm,
+  // .facebook_sm
+  // .vk_sm
+  // {
+  //   display: none;
+  // }
+
+
+}
+
+
+
+
+// .contacts:after {
+//   content: '';
+//   clear: both;
+//   display: block;
+// }

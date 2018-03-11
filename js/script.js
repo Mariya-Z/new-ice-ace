@@ -7,3 +7,9 @@ $('.tabs a').on('click',function(e){
   $(tabs_cnt_id).find('.instructor__item').removeClass('instructor__item--active');
   $(this.hash).addClass('instructor__item--active');
 });
+
+$('.menu-icon').bind('click', function() {
+$(this).toggleClass('active');
+$(this).find('div').removeClass('no-animation');
+$(".header").toggle();
+});

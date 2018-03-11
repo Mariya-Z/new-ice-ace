@@ -2,15 +2,19 @@
 {
   .team {
     background-image: url("../img/team_bg.jpg");
+    background-position: -190px 0;
     background-repeat: no-repeat;
     background-size: cover;
     height: 422px;
-    width: 320px;
+    // width: 320px;
     // margin: 0 auto;
     //text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
+    // justify-content: space-between;
+    // position: absolute;
+
 
 
     &__title {
@@ -27,6 +31,7 @@
       color: #74e196;
       border-color: #000;
       //font-size: 12px;
+      margin-top: 300px;
       width: 225px;
       //height: 47px;
     }
