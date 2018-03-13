@@ -1,3 +1,22 @@
+// .advant1, .advant2, .advant3
+// ,.advant4, .advant5, .advant6
+// {
+//   size: 0;
+//   display: none;
+//   height: 0;
+//   width: 0;
+// }
+
+// .advant1_sm, .advant2_sm, .advant3_sm
+// ,.advant4_sm, .advant5_sm, .advant6_sm
+// {
+//   size: 0;
+//   display: none;
+//   height: 0;
+//   width: 0;
+// }
+
+
 .advantage
 {
   width: 100%;
@@ -26,7 +45,7 @@
     // background-position: -91px -85px;
     margin-left: 25px;
     margin-right: 20px;
-
+    margin: 0 auto;
   }
 
   &__info
@@ -59,6 +78,15 @@
   }
 }
 
+@media (min-width: 768px)
+{
+
+}
+
+ @media (min-width: 1170px)
+{
+
+  }
 
 // .advantages {
 //   display: flex;

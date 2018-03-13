@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ice-ace</title>
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> -->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
 <body>
 
@@ -35,7 +38,7 @@
     <div class="header">
      <div class="container">
        <div class="logo">
-          <a href="#" class="icon logo_min"></a>
+          <a href="#" class="icon logo_min logo_bd"></a>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -65,7 +68,7 @@
 
           <a class="contacts__phone href="tel:88008008080"">8 (800) 800-80-80</a>
           <a class="contacts__email href="hello@iceace.com">hello@iceace.com</a>
-          <a href="#" class="btn btn--book">Записаться</a>
+          <a href="#" class="btn btn--header btn--inv">Записаться</a>
         </div>
      </div>
     </div>
@@ -129,6 +132,7 @@
         <h2 class="advantages__title">Почему мы</h2>
         <div class="advantages__content">
           <section class="advantage">
+            <i class="advant1_sm icon advantages--loc"></i>
             <i class="advant1 icon advantages--loc"></i>
             <div class="advantages__info">
               <span class="advantages__cathphrase">100% гарантия результата</span>
@@ -136,6 +140,7 @@
             </div>
           </section>
           <section class="advantage">
+            <i class="advant2_sm icon advantages--loc"></i>
             <i class="advant2 icon advantages--loc"></i>
             <div class="advantages__info">
               <span class="advantages__cathphrase">Опытные инструкторы</span>
@@ -143,6 +148,7 @@
             </div>
           </section>
           <section class="advantage">
+            <i class="advant3_sm icon advantages--loc"></i>
             <i class="advant3 icon advantages--loc"></i>
             <div class="advantages__info">
               <span class="advantages__cathphrase">Индивидуальные занятия и расписание</span>
@@ -150,6 +156,7 @@
             </div>
           </section>
           <section class="advantage">
+            <i class="advant4_sm icon advantages--loc"></i>
             <i class="advant4 icon advantages--loc"></i>
               <div class="advantages__info">
               <span class="advantages__cathphrase">Инвентарь и одежда</span>
@@ -158,7 +165,8 @@
           </section>
           <section class="advantage">
 
-              <i class="  advant5 icon advantages--loc"></i>
+              <i class="advant5_sm icon advantages--loc"></i>
+              <i class="advant5 icon advantages--loc"></i>
                 <div class="advantages__info">
                 <span class="advantages__cathphrase">Безопасность</span>
                 <p class="advantages__descr">Каждый инструктор подбирает технику катания и угол склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p>
@@ -166,6 +174,7 @@
             </section>
             <section class="advantage">
 
+              <i class="advant6_sm icon advantages--loc"></i>
               <i class="advant6 icon advantages--loc"></i>
                 <div class="advantages__info">
                 <span class="advantages__cathphrase">Трансфер</span>
@@ -216,8 +225,8 @@
 
     <section class="images">
       <div class="container">
-            <p class="images__title">#ice_ace_community</p>
-        <div class="images__photos">
+        <p class="images__title">#ice_ace_community</p>
+        <div class="images__photos owl-carousel" id="carousel">
           <img src="img/images1.jpg" alt="photo" class="images__photo">
           <img src="img/images2.jpg" alt="photo" class="images__photo">
           <img src="img/images3.jpg" alt="photo" class="images__photo">
@@ -229,14 +238,12 @@
     </section>
 
 
-
-
     <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7989.976898747339!2d30.317869!3d59.957125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ff24940c5738c!2sEpic+Skills!5e0!3m2!1sen!2sru!4v1520787034852" frameborder="0" style="border:0" width="100%" allowfullscreen>
     </iframe>
 
   </main>
 
-  <footer>
+  <!-- <footer>
     <div class="container">
       <div class="logo">
          <a href="#" class="icon logo__footer"></a>
@@ -265,9 +272,12 @@
       </ul>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <!-- <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> -->
   <script src="js/script.js"></script>
 </body>
 </html>

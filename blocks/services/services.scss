@@ -1,212 +1,233 @@
-@media (min-width: 320px) {
+.services
+{
+  &__content
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__title
+  {
+    font-family: Futura;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__description
+  {
+    font-family: Futura;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.service
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+
+  &__title
+  {
+    font-family: Futura;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 7px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+  }
+
+  &__description
+  {
+    display: none;
+  }
+
+  &__links
+  {
+    position: absolute;
+    bottom: 14px;
+    left: 130px;
+    // display: block;
+  }
+  &__info {
+    // display: none;
+  }
+  &__link
+  {
+    display: none;
+  }
+
+  &__photo1
+  {
+    background-image: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    // opacity: 0.7;
+    background-image: url('../img/services_img1.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 165px;
+    width: 165px;
+    margin-right: 1px;
+
+  }
+  &__photo2
+  {
+    background-image: url('../img/services_img2.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 82px;
+    width: 154px;
+
+  }
+  &__photo3
+  {
+    background-image: url('../img/services_img3.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 82px;
+    width: 154px;
+
+  }
+
+  &--wrap {
+    width: 154px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: 768px)
+{
   .services
   {
-
     &__content
     {
-      display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
-      // align-items: stretch;
+      margin: auto 15px;
     }
 
     &__title
     {
-      font-family: Futura;
-      font-size: 24px;
-      text-align: center;
-
-      // font-weight: bold;
+      margin-top: 30px;
     }
 
     &__description
     {
-      font-family: Futura;
-      font-size: 10px;
-      text-align: center;
-      margin-top: 0;
+      font-size: 20px;
     }
+  }
+
+  .service--horizontal:last-child
+  {
+    display: none;
   }
 
   .service
   {
-    position: relative;
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-
-
     &__title
     {
-      font-family: Futura;
-      font-size: 14px;
-      text-align: left;
-      padding-left: 7px;
-      position: absolute;
-      bottom: 0;
-      color: #fff;
+      font-size: 20px;
+      position: relative;
+      color: #000;
+      margin-top: 0;
+      padding-left: 0;
     }
 
     &__description
     {
-      display: none;
+      display: block;
+      font-size: 15px;
+      // font-weight: bold;
+      font-family: 'PT Sans', sans-serif;
     }
 
     &__links
     {
-      position: absolute;
-      bottom: 14px;
-      left: 130px;
-      // display: block;
+      position: relative;
+      left: 0;
+      display: inline-block;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
     }
+
     &__info {
-      // display: none;
+     width: 365px;
     }
+
     &__link
     {
-      display: none;
+      display: inline-block;
     }
 
-    // &__img
-    // {
-    //   width: 37px;
-    //   height: 27px;
-    //   background-position: -10px -303px;
-    //   float: right;
-    // }
-
-
-    &__photo1
+     &__photo1, &__photo2, &__photo3
     {
-      background-image: url('../img/services_img1.jpg');
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: cover;
-      height: 165px;
-      width: 165px;
-      margin-right: 1px;
-
+      width: 365px;
+      height: 245px;
+      margin-bottom: 40px;
     }
-    &__photo2
+
+    &--wrap
     {
-      background-image: url('../img/services_img2.jpg');
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: cover;
-      height: 82px;
-      width: 154px;
-
+      width: 365px;
     }
-    &__photo3
-    {
-      background-image: url('../img/services_img3.jpg');
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: cover;
-      height: 82px;
-      width: 154px;
-
-    }
-
-    &--wrap {
-      width: 154px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
   }
+
+
 }
 
-// .services {
+ @media (min-width: 1170px)
+{
+  .service--horizontal:last-child
+  {
+    display: flex;
+    //margin-top: 40px;
+  }
 
-//   &__content {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     align-items: stretch;
-//   }
-
-//   &__title {
-//     font-family: Futura;
-//     font-size: 40px;
-//     text-align: center;
-//   }
-
-//   &__description {
-//     font-family: Futura;
-//     font-size: 20px;
-//     text-align: center;
-//   }
-// }
-
-// .service {
-//   width: 360px;
-//   display: flex;
-//   flex-direction: column;
+  .services
+  {
+    &__title
+    {
+      font-size: 40px;
+    }
 
 
-//   &__title {
-//     font-family: Futura;
-//     font-size: 20px;
-//     text-align: left;
-//   }
+  }
 
-//   &__description
-//   {
-//     font-family: 'PT Sans', sans-serif;
-//     font-size: 15px;
-//   }
+  .service
+  {
+    &--wrap
+    {
+      width: 770px;
+    }
 
-//   &__links {
-//     display: block;
-//   }
+    &--horizontal
+    {
+      display: flex;
+      flex-direction: row;
+    }
 
-//   &__img {
-//     width: 37px;
-//     height: 27px;
-//     background-position: -114px -261px;
-//     float: right;
-//   }
+     &__photo1, &__photo2, &__photo3
+    {
+      margin-right: 45px;
+      width: 360px;
+    }
 
-//   &--horizontal {
-//     display: flex;
-//     flex-direction: row;
-//   }
+    &__info
+    {
+      width: 335px; //360px;
+    }
 
-// }
-
-
-
-
-/*.service--horizontal {
-  display: flex;
-  flex-direction: row;
-}*/
-
-/*.service__photo {
-  width: 360px;
-  height: 245px;
-}*/
-
-// .service__description
-// {
-//   font-family: 'PT Sans', sans-serif;
-//   font-size: 15px;
-// }
-
-// .service__links {
-//   display: block;
-// }
-
-// .service__link {
-//   font-family: Futura;
-//   font-size: 20px;
-// }
-
-// .service__link:after {
-//   content: '';
-//   float: right;
-//   background-position: -10px -261px;
-//   width: 35px;
-//   height: 25px;
-// }
+     &__content
+    {
+      margin: 0;
+    }
+  }
+}

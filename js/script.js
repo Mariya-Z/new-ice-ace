@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 $('.tabs a').on('click',function(e){
   e.preventDefault();
   $(this).closest('.tabs').find('.tabs__item').removeClass('tabs__item--active');
@@ -12,4 +14,21 @@ $('.menu-icon').bind('click', function() {
 $(this).toggleClass('active');
 $(this).find('div').removeClass('no-animation');
 $(".header").toggle();
+});
+
+ $('#carousel').owlCarousel({
+   loop: true,
+   center: true,
+   responsive:{
+     0:{
+        items:1
+     },
+     600:{
+        items:3
+     },
+     1000:{
+        items:5
+     }
+}
+ });
 });

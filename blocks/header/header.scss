@@ -14,8 +14,7 @@
 
 .main-nav
 {
-  width: 320px;
-  margin-top: 18px;
+  width: 100%;
   text-align: center;
 
   &__list
@@ -43,23 +42,15 @@
   }
 }
 
-.logo
+.logo_min
 {
   // width: 47px;
   //height: 8px;
   // margin: 0;
   // position: absolute;
   top: 0;
-  padding-top: 22px;
-  padding-left: 22px;
-
-  &__header
-  {
-    display: block;
-    width: 47px;
-    height: 9px;
-    background-position: -161px -221px;
-  }
+  margin-top: 22px;
+  margin-left: 22px;
 }
 
 .contacts
@@ -79,6 +70,7 @@
     color: #000;
     display: flex;
     justify-content: center;
+    padding-top: 35px;
   }
 
    &__email
@@ -89,6 +81,7 @@
     color: #000;
     display: flex;
     justify-content: center;
+    padding-top: 25px;
   }
 }
 
@@ -97,16 +90,21 @@
   display: flex;
   justify-content: space-between;
   //width: 192px;
-  margin-top: 10px;
   margin-top: 20px;
 }
 
-.btn-book
+.btn--header
 {
-  position: absolute;
-  top: 0;
-  margin-top: 370px;
-  margin-left: 92px;
+  // position: absolute;
+  // top: 0;
+  margin-top: 35px;
+  margin-left: 29.5px;
+}
+
+.btn--inv
+{
+  border: 2px solid #74e196;
+  color: #000;
 }
 
 @media (min-width: 768px)
@@ -116,19 +114,71 @@
 
 @media (min-width: 1170px)
 {
-  .header {
-    display: flex;
-    height: 646px;
+  .logo
+  {
+    height: 55px;
   }
 
-  // .youtube_sm,
-  // .instagram_sm,
-  // .facebook_sm
-  // .vk_sm
-  // {
-  //   display: none;
-  // }
+  .header
+  {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
 
+  .main-nav
+  {
+    width: 555px;
+    margin: 0;
+
+    &__list
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 45px;
+      margin-right: 45px;
+    }
+
+    &__item
+    {
+      border-bottom: none;
+    }
+
+  }
+
+  .logo_min
+  {
+    display: none;
+  }
+
+  .contacts
+  {
+    margin: 0;
+    display: inline-block;
+
+    &__email
+    {
+      display: none;
+    }
+
+    &__phone
+    {
+      padding: 0;
+    }
+  }
+
+  .social-networks
+  {
+    display: none;
+  }
+
+  .btn--header
+  {
+    display: inline-block;
+    margin: 0;
+  }
 
 }
 
