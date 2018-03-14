@@ -1,29 +1,128 @@
-@media (min-width: 320px) {
-  footer {
-    background-image: url('../img/footer_bg_320.jpg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    // width: 320px;
-    height: 303px;
+footer
+{
+  background-image: url('../img/footer_bg_320.jpg');
+  background-repeat: no-repeat;
+  background-position: -365px 0;
+  background-size: cover;
+  height: 306px;
+  font-family: Futura;
+  font-weight: bold;
+
+}
+
+.logo
+{
+  &--footer
+  {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
+
+.contacts
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-networks--footer
+{
+  display: flex;
+  align-items: center;
+}
+
+.copyright
+{
+  position: relative;
+  top: 200px;
+  font-size: 12px;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.phone
+{
+  margin-top: 50px;
+
+  &__link
+  {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
   }
 
-  .logo__footer {
-  display: block;
-  width: 65px;
-  height: 22px;
-  background-position: -10px -261px;
 }
 
+.topics
+{
+  &__mail
+  {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
 }
 
-// @media (min-width: 1170px) {
-//   footer {
-//     background-image: url("../img/footer_bg.jpg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     /*margin: 0;
-//     color: #fff;
-//     height: 645px;*/
-//   }
-// }
+.links
+{
+  display: none;
+}
+
+@media (min-width: 768px)
+{
+  footer
+  {
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: 1170px)
+{
+  footer
+  {
+      background-image: url("../img/footer_bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      background-size: cover;
+      /*margin: 0;
+      color: #fff;
+      height: 645px;*/
+    }
+
+  .logo
+  {
+    &--footer
+    {
+      justify-content: flex-start;
+      display: inline-block;
+    }
+  }
+
+  .contacts
+  {
+    // display: flex;
+    // flex-direction: column;
+    // text-align: center;
+    display: inline-block;
+    width: 710px;
+    flex-direction: row;
+
+    &-links
+    {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .social-networks--footer
+  {
+    // display: flex;
+    // align-items: center;
+    width: 255px;
+  }
+
+}

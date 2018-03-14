@@ -9,7 +9,7 @@
   background-color: #fff;
   padding:  0;
   font-family: Futura;
-  height: 480px;
+  // height: 480px;
 }
 
 .main-nav
@@ -41,16 +41,21 @@
     color: #000;
   }
 }
-
-.logo_min
+.logo
 {
-  // width: 47px;
-  //height: 8px;
-  // margin: 0;
-  // position: absolute;
-  top: 0;
-  margin-top: 22px;
-  margin-left: 22px;
+  &--header
+  {
+    height: 55px;
+  }
+
+  &--sm
+  {
+    margin-top: 15px;
+    margin-left: 22px;
+    margin-bottom: 22px;
+    width: 56px;
+    height: 22px;
+  }
 }
 
 .contacts
@@ -87,6 +92,7 @@
 
 .social-networks
 {
+  display: inline-block;
   display: flex;
   justify-content: space-between;
   //width: 192px;
@@ -114,18 +120,33 @@
 
 @media (min-width: 1170px)
 {
-  .logo
-  {
-    height: 55px;
-    // display: inline-block;
-  }
-
   .header
   {
     display: inline-block;
     display: flex;
     flex-direction: row;
     position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo
+  {
+    display: inline-block;
+
+    &--sm
+    {
+      // margin-top: 15px;
+      // margin-left: 22px;
+      // margin-bottom: 22px;
+      width:  160px;
+      height: 55px;
+    }
+  }
+
+  .social-networks--header
+  {
+    display: none;
   }
 
   .main-nav
@@ -133,9 +154,12 @@
     width: 555px;
     margin: 0;
     display: inline-block;
+    position: absolute;
+    top: 0;
 
     &__list
     {
+      display: inline-block;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -150,15 +174,15 @@
 
   }
 
-  .logo_min
-  {
-    display: none;
-  }
-
   .contacts
   {
     margin: 0;
     display: inline-block;
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    justify-content: space-between;
+
 
     &__email
     {
@@ -169,19 +193,16 @@
     {
       padding: 0;
     }
-  }
 
-  .social-networks
-  {
-    display: none;
+    .btn
+    {
+      &--header
+      {
+        display: inline-block;
+        margin: 0;
+      }
+    }
   }
-
-  .btn--header
-  {
-    display: inline-block;
-    margin: 0;
-  }
-
 }
 
 
