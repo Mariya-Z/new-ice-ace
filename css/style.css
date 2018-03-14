@@ -927,7 +927,8 @@ ul {
     position: relative;
     bottom: 0;
     width: 225px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 360px; }
 
 @media (min-width: 768px) {
   .team__descr {
@@ -940,7 +941,9 @@ ul {
     margin-top: 430px; }
   .team__content {
     background-position: -100px 0;
-    height: 595px; } }
+    height: 595px; }
+  .team .btn--sm {
+    margin: 0 auto; } }
 
 @media (min-width: 1170px) {
   .team__descr {
@@ -1129,28 +1132,11 @@ footer {
       flex-direction: column; }
   .social-networks--footer {
     width: 255px; }
-  .links {
-    width: 585px;
+  .links__item {
     display: inline-block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: inline-block;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-left: 45px;
-    margin-right: 45px; }
-    .links__item {
-      display: inline-block;
-      font-size: 15px;
-      font-weight: 900;
-      margin: 15px auto;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #000; } }
+    font-size: 15px;
+    font-weight: 900;
+    margin: 15px auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000; } }
