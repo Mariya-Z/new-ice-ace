@@ -829,11 +829,7 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 33%;
-    height: 170px; }
+    width: 33%; }
     .advantage__cathphrase {
       margin: auto;
       display: -webkit-box;
