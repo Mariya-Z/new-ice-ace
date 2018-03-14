@@ -32,6 +32,12 @@
 .advantages
 {
   font-family: Futura;
+  // align-items: center;
+
+  &--loc
+  {
+    display: block;
+  }
 
   &__title
   {
@@ -64,12 +70,14 @@
     &--loc
     {
       margin: auto;
+
     }
   }
 
   .advantage
   {
     flex-direction: column;
+    justify-content: center;
     width: 33%;
     height: 170px;
 
@@ -78,6 +86,9 @@
     &__cathphrase
     {
       margin: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
   }
 }

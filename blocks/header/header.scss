@@ -176,13 +176,15 @@
 
   .contacts
   {
-    margin: 0;
-    display: inline-block;
-    display: flex;
-    flex-direction: row;
-    width: 360px;
-    justify-content: space-between;
-
+    &--header
+    {
+      margin: 0;
+      display: inline-block;
+      display: flex;
+      flex-direction: row;
+      width: 360px;
+      justify-content: space-between;
+    }
 
     &__email
     {
@@ -192,6 +194,7 @@
     &__phone
     {
       padding: 0;
+      display: inline-block;
     }
 
     .btn

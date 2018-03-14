@@ -125,4 +125,29 @@ footer
     width: 255px;
   }
 
+  .links
+  {
+    width: 585px;
+    display: inline-block;
+    display: flex;
+
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px;
+
+    &__item
+    {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 900;
+      margin: 15px auto;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
 }

@@ -608,7 +608,7 @@ ul {
       margin-right: 45px; }
     .main-nav__item {
       border-bottom: none; }
-  .contacts {
+  .contacts--header {
     margin: 0;
     display: inline-block;
     display: -webkit-box;
@@ -622,13 +622,14 @@ ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .contacts__email {
-      display: none; }
-    .contacts__phone {
-      padding: 0; }
-    .contacts .btn--header {
-      display: inline-block;
-      margin: 0; } }
+  .contacts__email {
+    display: none; }
+  .contacts__phone {
+    padding: 0;
+    display: inline-block; }
+  .contacts .btn--header {
+    display: inline-block;
+    margin: 0; } }
 
 .services__content {
   display: -webkit-box;
@@ -803,6 +804,8 @@ ul {
 
 .advantages {
   font-family: Futura; }
+  .advantages--loc {
+    display: block; }
   .advantages__title {
     font-size: 24px;
     text-align: center; }
@@ -826,10 +829,20 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 33%;
     height: 170px; }
     .advantage__cathphrase {
-      margin: auto; } }
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center; } }
 
 @media (min-width: 1170px) {
   .advantages__content {
@@ -1119,4 +1132,29 @@ footer {
       -ms-flex-direction: column;
       flex-direction: column; }
   .social-networks--footer {
-    width: 255px; } }
+    width: 255px; }
+  .links {
+    width: 585px;
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px; }
+    .links__item {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 900;
+      margin: 15px auto;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000; } }
