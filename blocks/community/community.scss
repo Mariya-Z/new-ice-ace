@@ -1,38 +1,44 @@
-@media (min-width: 320px)
+.community
 {
-  .community {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
 
+  &__title
+  {
+    font-family: Futura;
+    font-size: 24px;
+  }
 
-    &__title
-    {
-      font-family: Futura;
-      font-size: 24px;
-    }
+  &__descr
+  {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    padding: 0 20px;
+    margin: auto;
+  }
+}
 
+@media (min-width: 768px)
+{
+  .community
+  {
     &__descr
     {
-      font-family: 'PT Sans', sans-serif;
-      font-size: 12px;
+      width: 540px;
     }
   }
 }
 
-// .community {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
-
-// .community__title {
-//   font-family: Futura;
-//   font-size: 40px;
-// }
-
-// .community__descr {
-//   font-family: 'PT Sans', sans-serif;
-//   font-size: 15px;
-// }
+@media (min-width: 1170px)
+{
+  .community
+  {
+    &__descr
+    {
+      width: 750px;
+    }
+  }
+}

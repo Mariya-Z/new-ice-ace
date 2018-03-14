@@ -1,62 +1,19 @@
-// .advant1, .advant2, .advant3
-// ,.advant4, .advant5, .advant6
-// {
-//   size: 0;
-//   display: none;
-//   height: 0;
-//   width: 0;
-// }
-
-// .advant1_sm, .advant2_sm, .advant3_sm
-// ,.advant4_sm, .advant5_sm, .advant6_sm
-// {
-//   size: 0;
-//   display: none;
-//   height: 0;
-//   width: 0;
-// }
-
-
 .advantage
 {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.advantages
-{
-  // display: flex;
-  // flex-direction: column;
-  font-family: Futura;
-
-  // &__info
-  // {
-  //   display: flex;
-  //   flex-direction: row;
-  // }
 
   &--loc
   {
     display: inline-block;
-    // width: 60px;
-    // height: 61px;
-    // background-position: -91px -85px;
-    margin-left: 25px;
-    margin-right: 20px;
     margin: 0 auto;
   }
 
   &__info
   {
     width: 200px;
-  }
-
-  &__title
-  {
-    font-size: 24px;
-    text-align: center;
   }
 
   &__cathphrase
@@ -70,6 +27,17 @@
     font-family: 'PT Sans', sans-serif;
     font-size: 12px;
   }
+}
+
+.advantages
+{
+  font-family: Futura;
+
+  &__title
+  {
+    font-size: 24px;
+    text-align: center;
+  }
 
   &__content
   {
@@ -80,38 +48,57 @@
 
 @media (min-width: 768px)
 {
+  .advantages
+  {
+    align-items: stretch;
+    &__content
+    {
+      display: flex;
+      // flex-direction: row;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      width: 740px;
+    }
 
+
+    &--loc
+    {
+      margin: auto;
+    }
+  }
+
+  .advantage
+  {
+    flex-direction: column;
+    width: 33%;
+    height: 170px;
+
+
+
+    &__cathphrase
+    {
+      margin: auto;
+    }
+  }
 }
 
  @media (min-width: 1170px)
 {
-
+  .advantages
+  {
+    &__content
+    {
+      width: 1140px;
+    }
   }
 
-// .advantages {
-//   display: flex;
-//   flex-direction: column;
-// }
+  .advantage
+  {
+    &__info
+    {
+      width: 100%;
+    }
+  }
+}
 
-// .advantages__title {
-//   font-family: Futura;
-//   font-size: 40px;
-// }
-
-// .advantages__cathphrase
-// {
-//   font-family: Futura;
-//   font-size: 20px;
-// }
-
-// .advantages__descr
-// {
-//   font-family: 'PT Sans', sans-serif;
-//   font-size: 15px;
-// }
-
-// .advantages__content {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
 

@@ -117,6 +117,7 @@
   .logo
   {
     height: 55px;
+    // display: inline-block;
   }
 
   .header
@@ -131,6 +132,7 @@
   {
     width: 555px;
     margin: 0;
+    display: inline-block;
 
     &__list
     {

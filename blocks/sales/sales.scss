@@ -9,32 +9,29 @@
   background-size: cover;
   width: 100%;
   height: 362px;
-  //background-size: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
-
-
   font-family: Futura;
   text-align: center;
 
   &__content
   {
     display: flex;
-    width: 205px;
+    // width: 100%;
     margin: auto;
+    justify-content: space-between;
   }
 
-  &__info--md
+  &__info
   {
     display: none;
   }
 
-  // &__content@first_child({})
-  // {
-  //   //display: flex;
-  //   display: none;
-  // }
+  &__info:first-child
+  {
+    display: block;
+  }
 
   &__title
   {
@@ -53,30 +50,26 @@
 }
 
 
-// .sales {
-//   background-image: url("../img/sales_bg.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   color: #fff;
-//   display: flex;
-//   flex-direction: column;
-// }
+@media (min-width: 768px)
+{
+  .btn--md
+  {
+    display: inline-block;
+    margin-top: 40px;
+  }
 
-// .sales__content {
-//   display: flex;
-// }
+  .btn--wb
+  {
+    border: 2px solid #fff;
+    color: #74e196;
+  }
 
-// .sales__title {
-//   font-family: Futura;
-//   font-size: 40px;
-// }
-
-// .sales__cathphrase {
-//   font-family: Futura;
-//   font-size: 22px;
-// }
-
-// .sales__descr {
-//   font-family: Futura;
-//   font-size: 20px;
-// }
+  .sales
+  {
+    &__info
+    {
+      display: inline-block;
+      width: 205px;
+    }
+  }
+}

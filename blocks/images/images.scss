@@ -18,8 +18,14 @@
 {
   .images
   {
-    // display: flex;
+    display: flex;
+    flex-wrap: wrap;
     // flex-direction: column;
+
+    &__photo
+    {
+      width: 50px;
+    }
 
 
     &__title
@@ -38,16 +44,3 @@
   }
 }
 
-
-  // .images {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
-  // .images_title{
-  //   display: flex;
-  //   flex-direction: row;
-  //   font-family: Futura;
-  //   font-size: 40px;
-  //   /*font-style: bold;*/
-  // }
